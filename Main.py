@@ -24,8 +24,8 @@ def menu():
 
         if opcion == 1:
             # Agregar nueva tarea
-            descripcion = input("Ingresa la descripción de la tarea: ")
-            lista_de_tareas.agregar_tarea(descripcion)
+            tarea = input("Ingresa la descripción de la tarea: ")
+            lista_de_tareas.agregar_tarea(tarea)
         elif opcion == 2:
             # Marcar tarea como completada
             try:

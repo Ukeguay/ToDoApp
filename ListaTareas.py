@@ -5,9 +5,9 @@ class ListaDeTareas:
     def __init__(self):
         self.tareas = []  # Lista que almacenará las tareas
 
-    def agregar_tarea(self, descripcion):
+    def agregar_tarea(self, tarea):
         # Agrega una nueva tarea a la lista
-        self.tareas.append(Tarea(descripcion))
+        self.tareas.append(Tarea(tarea))
         print("Tarea agregada exitosamente.")
 
     def marcar_completada(self, posicion):
