@@ -3,22 +3,25 @@ from ListaTareas import ListaDeTareas
 
 # Función principal para el menú interactivo
 def menu():
-    lista_de_tareas = ListaDeTareas()  # Crear una nueva lista de tareas
+    
+    # Crear una nueva lista de tareas
+    lista_de_tareas = ListaDeTareas()
 
     while True:
-        # Mostrar el menú de opciones
+
         print("\nMenú de opciones:")
         print("1. Agregar tarea")
         print("2. Marcar tarea como completada")
         print("3. Mostrar todas las tareas")
         print("4. Eliminar tarea")
-        print("5. Salir")
+        print("5. Salir\n")
 
         try:
-            # Leer la opción seleccionada por el usuario
+            # Lee la opción seleccionada por el usuario
             opcion = int(input("Selecciona una opción: "))
+            
         except ValueError:
-            # Manejar error en caso de que el input no sea un número
+            # Maneja error en caso de que el input no sea un número
             print("Error: opción no válida. Por favor, selecciona un número.")
             continue
 
@@ -45,10 +48,12 @@ def menu():
                 print("Error: ingresa un número válido.")
                 continue
             lista_de_tareas.eliminar_tarea(posicion)
+            
         elif opcion == 5:
             # Salir del programa
             print("Saliendo...")
             break
+        
         else:
             # Opción no válida
             print("Opción no válida. Por favor, selecciona una opción entre 1 y 5.")
