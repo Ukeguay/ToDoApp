@@ -29,6 +29,7 @@ def menu():
             # Agregar nueva tarea
             tarea = input("Ingresa la descripción de la tarea: ")
             lista_de_tareas.agregar_tarea(tarea)
+            
         elif opcion == 2:
             # Marcar tarea como completada
             try:
@@ -37,9 +38,11 @@ def menu():
                 print("Error: ingresa un número válido.")
                 continue
             lista_de_tareas.marcar_completada(posicion)
+            
         elif opcion == 3:
             # Mostrar todas las tareas
             lista_de_tareas.mostrar_tareas()
+            
         elif opcion == 4:
             # Eliminar una tarea
             try:
@@ -51,7 +54,7 @@ def menu():
             
         elif opcion == 5:
             # Salir del programa
-            print("Saliendo...")
+            print("\nHasta luego!!\n")
             break
         
         else:
