@@ -10,9 +10,8 @@ class Tarea:
         # Representa el estado de si la tarea está completada o no.
         self.completada = False
 
-    # Método para marcar la tarea como completada.
+    # Método para cambiar el estado de la tarea de False a True.
     def marcar_completada(self):
-        # Cambia el atributo `completada` a True, indicando que la tarea está completada.
         self.completada = True
 
     # Método especial que define cómo se muestra el objeto como una cadena de texto.
